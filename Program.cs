@@ -33,20 +33,15 @@ void PrintArray(string[] array){
 Console.WriteLine();    
 }
 
-Console.Write("Initial array: "); 
-PrintArray(arr1);
-CreateNewArray(arr1);
-Console.WriteLine("A new array of strings that are less than or equal to 3 characters long: "); 
-PrintArray(resultArr);
-Console.WriteLine();
-Console.Write("Initial array: "); 
-PrintArray(arr2);
-CreateNewArray(arr2);
-Console.WriteLine("A new array of strings that are less than or equal to 3 characters long: "); 
-PrintArray(resultArr);
-Console.WriteLine();
-Console.Write("Initial array: "); 
-PrintArray(arr3);
-CreateNewArray(arr3);
-Console.WriteLine("A new array of strings that are less than or equal to 3 characters long: "); 
-PrintArray(resultArr);
+void ProgramPlay(string[] array){
+	Console.Write("Initial array: "); 
+	PrintArray(array);
+	CreateNewArray(array);
+	Console.WriteLine("A new array of strings that are less than or equal to 3 characters long: "); 
+	PrintArray(resultArr);
+	Console.WriteLine();
+}
+
+ProgramPlay(arr1);
+ProgramPlay(arr2);
+ProgramPlay(arr3);
